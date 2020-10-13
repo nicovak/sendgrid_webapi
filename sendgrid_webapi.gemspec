@@ -12,15 +12,13 @@ Gem::Specification.new do |s|
   s.summary     = %q{SendGrid WEB API gem fo Rails}
   s.description = %q{Gem for access to SendGrid WEB API from rails}
 
-  s.rubyforge_project = "sendgrid_webapi"
-
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_dependency "faraday", "~> 0.12"
-  s.add_dependency "faraday_middleware", "~> 0.12"
+  s.add_dependency "faraday", "~> 1.0.1"
+  s.add_dependency "faraday_middleware", "~> 1.0.0"
   s.add_dependency "json", ">= 2.3.0"
 
   s.add_development_dependency "rspec", "~> 2.10.0"
